@@ -130,6 +130,9 @@ table {
 body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* navigation bar starts here */
 
@@ -171,10 +174,14 @@ nav ul li button {
 /* Logo and search bar section*/
 
 .search {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+}
+.logo img {
+  margin-bottom: 37px;
 }
 
 .search-input {
@@ -188,7 +195,7 @@ nav ul li button {
   max-width: 550px;
 }
 .search-input:hover {
-  box-shadow: 1px 1px#e2dddd;
+  box-shadow: 1px  1px rgb(209, 202, 202);
 }
 .search-input input {
   flex: 1;
@@ -209,6 +216,7 @@ nav ul li button {
   color: rgb(119, 116, 116);
   font-size: 15px;
   border-radius: 4px;
+  margin-top: 20px;
 }
 .leg button:hover {
   position: inherit;
@@ -217,11 +225,12 @@ nav ul li button {
 }
 /* Logo and search bar completed */
 
+/* footer section*/
 footer {
   display: flex;
   justify-content: space-between;
   background-color: rgb(248, 236, 236);
-  margin-top: 235px;
+  margin-top: 234px;
 }
 .left {
   display: flex;
@@ -233,9 +242,9 @@ footer {
   justify-self: start;
 }
 footer div a {
-  padding: 5px;
-  margin: 10px 15px 0 15px;
-  font-size: 15px;
+  padding-bottom: 13px;
+  margin: 10px 20px 0 20px;
+  font-size: 14px;
   color: rgb(102, 99, 99);
   text-decoration: none;
 }
