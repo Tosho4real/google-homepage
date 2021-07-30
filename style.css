@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  margin-top: 5px;
+}
+.header ul {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 13px;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: rgb(46, 41, 41);
+  display: block;
+}
+
+.rightnav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 13px
+}
+nav ul li button{
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    border-radius: 3px;
+    border-style: none;
+    font-weight: 1000;
+    cursor:pointer;
+
+}
