@@ -6,21 +6,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* navigation bar starts here */
-.header {
-  margin-top: 5px;
-}
+
 .header ul {
-  text-decoration: none;
   list-style-type: none;
   font-size: 13px;
   padding: 10px;
 }
-a {
+.header ul li a {
   text-decoration: none;
   color: rgb(46, 41, 41);
   display: block;
 }
-
+.header ul li a:hover {
+  text-decoration: underline;
+}
+#app:hover{
+  text-decoration: none;
+}
 .rightnav{
     display: flex;
     align-items: center;
@@ -56,9 +58,12 @@ nav ul li button{
   height: 25px;
   padding: 10px 20px;
   border-radius: 999px;
-  width: 75vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: 550px;
+}
+.search-input:hover{
+  box-shadow: 1px 1px#e2dddd;
 }
 .search-input input {
   flex: 1;
@@ -73,15 +78,44 @@ nav ul li button{
 .leg button{
   padding: 10px 15px;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
-  background-color: #f5efef;
-  color: rgb(131, 127, 127);
+  background-color: hsl(0, 50%, 96%);
+  color: rgb(119, 116, 116);
   font-size: 15px;
   border-radius: 4px;
+  border-width: initial;
 }
-.leg button:hover{
-  border: 1px solid lightgrey;
-  box-shadow: 0 2px 3px 0;
+.leg button:hover {
+  position: inherit;
+  border: .1px solid rgb(206, 203, 203);
+  max-width:inherit;
 }
 /* Logo and search bar completed */
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 236, 236);
+}
+.left{
+  display: flex;
+ justify-self: start;
+}
+
+.right {
+  display: flex;
+  justify-self: start;
+
+}
+footer div a {
+  padding: 5px;
+  margin: 10px 15px 0 15px;
+  font-size: 15px;
+  color: rgb(102, 99, 99);
+  text-decoration: none;
+}
+footer div a:hover {
+  text-decoration: underline;
+}
